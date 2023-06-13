@@ -10,7 +10,7 @@ from humanize.filesize import naturalsize
 from netaddr import EUI, mac_unix
 
 
-DATETIME_FORMAT_OPENVPN = u'%a %b %d %H:%M:%S %Y'
+DATETIME_FORMAT_OPENVPN = u'%Y-%m-%d %H:%M:%S'
 RE_VIRTUAL_ADDR_MAC = re.compile(
     u'^{0}:{0}:{0}:{0}:{0}:{0}$'.format(u'[a-f0-9]{2}'), re.I)
 RE_VIRTUAL_ADDR_NETWORK = re.compile(u'/(\\d{1,3})$')
